@@ -2,10 +2,14 @@
 
  ## Description
 
+ News - https://thenewsapi.com 
+
+ Weather - 
+
  ## Future Development
 
  ## Deployed at ↓
 
- enews.jaqsentanner.com
+ https://enews.jaqsentanner.com
 
  
