@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url(/assets/northern_lights.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.font-white {
+    color:white;
+}
+
+.nav-header {
+    text-align: center;
+}
+
+.bigBox{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.newsBox {
+    width: 400px;
+    height: 500px;
+}
+
+.weatherBox {
+    width: 400px;
+    height: 500px;
+}
+
+.box-h1 {
+    text-align:center;
+    font-size:44px;
+    margin-bottom: 10px;
+    font-family: Inter;
+}
+
+.d-flex {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.news-img {
+    /* border:solid; */
+    height: 250px;
+    width: 375px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-right: 2px;
+    margin-left: 10px;
+}
+
+img {
+    border-radius:10px;
+}
+
+.btn {
+    background-color: rgb(112, 112, 112);
+    border-radius: 12px;
+    padding-top:6px;
+    padding-bottom:6px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.btn-fade {
+    opacity: 0.50;
+}
+
+.btn-fade:hover {
+    opacity: 1.0;
+}
+
+.footer {
+    display:flex;
+    justify-content: center;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.font-mont {
+    font-family:Inter;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-test {
+    border: solid 2px white;
+    width:160px;
+}
+
+.weather-panels {
+    margin-left: 4px;
+    margin-right:4px;
+}
+
