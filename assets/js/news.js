@@ -1,10 +1,12 @@
 const header1 = document.getElementById('header1');
 const image = document.getElementById('imageJS');
+const newsBody = document.getElementById('newsBody');
 
 let headerText
 let newsImage
+let bodyText
 
-const requestURL = '';
+const requestURL = 'https://api.thenewsapi.com/v1/news/top?api_token=1JHhYSZpbVMto5AgJ58VUygKJEFfTJrArZBoUqWC&language=en';
 
 let currentPage = 0;
 let add = 1;
@@ -28,10 +30,18 @@ nextButton.addEventListener('click', () => {
             if (currentPage < maxPage){
 
                 console.log(data)
+                headerText = data.data[currentPage]["title"]
+                newsImage = data.data[currentPage]["image_url"]
+                header1.innertext = headerText
+                image.src = newsImage
             }
             else {
                 currentPage = 0
                 console.log(data)
+                headerText = data.data[currentPage]["title"]
+                newsImage = data.data[currentPage]["image_url"]
+                header1.innerText = headerText
+                image.src = newsImage
             }
         })
     }
@@ -47,6 +57,12 @@ function defaultNews() {
 
     .then(function(data) {
         console.log(data)
+        headerText = data.data[currentPage]["title"]
+        newsImage = data.data[currentPage]["image_url"]
+        bodyText = data.data[currentPage]["description"]
+        header1.innerText = headerText
+        newsBody.innerText = bodyText
+        image.src = newsImage
     })
 }
 
